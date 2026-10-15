@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zone Time",
+        "description": "Escolhe as pessoas a seguir. O tempo em cada zona é contado a partir do estado de cada pessoa.",
+        "data": {
+          "persons": "Pessoas"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "O Zone Time já está configurado."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zone Time",
+        "data": {
+          "persons": "Pessoas"
+        }
+      }
+    }
+  },
+  "device": {
+    "person": {
+      "name": "Tempo por zona {name}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "today": {
+        "name": "Hoje"
+      },
+      "week": {
+        "name": "Esta semana"
+      },
+      "month": {
+        "name": "Este mês"
+      },
+      "year": {
+        "name": "Este ano"
+      }
+    }
+  },
+  "services": {
+    "rebuild": {
+      "name": "Reconstruir a partir do histórico",
+      "description": "Volta a calcular os dias que ainda estão no histórico do Home Assistant."
+    }
+  }
+}

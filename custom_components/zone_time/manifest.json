@@ -1,0 +1,22 @@
+{
+  "domain": "zone_time",
+  "name": "Zone Time",
+  "codeowners": [
+    "@dmdias"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "person",
+    "recorder",
+    "websocket_api",
+    "zone"
+  ],
+  "documentation": "https://github.com/dmdias/ha-zone-time",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/dmdias/ha-zone-time/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

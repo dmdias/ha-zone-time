@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zone Time",
+        "description": "Choose the persons to follow. The time in each zone is counted from each person's state.",
+        "data": {
+          "persons": "Persons"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Zone Time is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zone Time",
+        "data": {
+          "persons": "Persons"
+        }
+      }
+    }
+  },
+  "device": {
+    "person": {
+      "name": "Zone time {name}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "today": {
+        "name": "Today"
+      },
+      "week": {
+        "name": "This week"
+      },
+      "month": {
+        "name": "This month"
+      },
+      "year": {
+        "name": "This year"
+      }
+    }
+  },
+  "services": {
+    "rebuild": {
+      "name": "Rebuild from history",
+      "description": "Recalculates the days still in the Home Assistant history."
+    }
+  }
+}
